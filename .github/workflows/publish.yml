@@ -2,6 +2,10 @@ name: publish
 
 on: [push]
 
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   publish-docker-image:
     runs-on: ubuntu-latest
